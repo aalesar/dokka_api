@@ -1,0 +1,15 @@
+Start mongodb instance by typing in terminal:
+mongod
+Tell the terminal the application to work with by typing:
+export FLASK_APP=dokka_api.py
+Start flask instance with :
+flask run
+
+Send POST request to curl with:
+curl -X POST localhost:5000/getAddresses --upload-file '/yourpath/nameofthecsv.csv' -i
+It should return JSON file as explained in dicumentation
+send GET request to curl with:
+curl -X GET localhost:5000/getResult/result_id
+if the result id exists in db json file will be returned otherwise
+404 HTTP  error will be returned 
+
