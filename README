@@ -1,5 +1,7 @@
 Start mongodb instance by typing in terminal:
 mongod
+Flask will try to connect to default localhost:27017 mongodb instance
+you can change this inside config.
 
 Tell the terminal the application to work with by typing:
 export FLASK_APP=dokka_api.py
